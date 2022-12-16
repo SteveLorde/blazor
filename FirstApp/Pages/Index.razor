@@ -1,0 +1,36 @@
+﻿@page "/"
+@inject NavigationManager UriHelper
+
+
+<PageTitle>Index</PageTitle>
+
+<div class="threebuttons">
+    <div class="button">
+        <img src="" alt="" @onclick=@NavigateToAccount>
+        <a href="">Account</a>
+    </div>
+    <div class="button" @onclick=@NavigateToNews>
+        <img src="" alt="">
+        <a href="">News</a>
+    </div>
+    <div class="button" @onclick=@NavigateToStore>
+        <img src="" alt="">
+        <a href="./Todo">Store</a>
+    </div>
+</div>
+
+
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    void NavigateToNews(){
+    UriHelper.NavigateTo("news");
+    }
+    void NavigateToAccount(){
+    UriHelper.NavigateTo("account");
+    }
+    void NavigateToStore(){
+    UriHelper.NavigateTo("store");
+    }
+}

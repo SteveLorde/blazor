@@ -1,0 +1,27 @@
+
+
+.threebuttons {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    margin-top: 100px;
+    font-size: 35px;
+}
